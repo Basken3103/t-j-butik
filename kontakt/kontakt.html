@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt os</title>
+    <link rel="stylesheet" href="kontakt.css"> <!-- Link til din CSS-fil -->
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt os</h1>
+    </header>
+
+    <main>
+        <section class="kontakt-info">
+            <h2>Vores kontaktoplysninger</h2>
+            <p><strong>Telefon:</strong> +45 1234 5678</p>
+            <p><strong>Email:</strong> kontakt@webshop.dk</p>
+            <p><strong>Adresse:</strong> Webshop Gade 12, 1000 København</p>
+        </section>
+
+        <ul class="navlist">
+            <li><a href="/MIn webshop/index.html">forside</a></li>
+        </ul>
+
+        <section class="main center-max flex-desktop">
+            <article class="article article-form">
+                <div class="container">
+                    <h1>Kontaktformular</h1>
+                    <form target="_blank" action="https://formsubmit.co/vesterby@hotmail.dk" method="POST">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Navn" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Addresse"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Din besked" class="form-control" name="besked" rows="10"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Send besked</button>
+                    </form>
+                </div>
+            </article>
+            <aside class="aside">
+                <section class="map">
+                    <h2>Find os her</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.0!2d12.568337!3d55.676098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQwJzM0LjAiTiAxMsKwMzQnMDcuMCJF!5e0!3m2!1sen!2sdk!4v1615581610123"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Webshop. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+
+</html>
