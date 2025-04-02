@@ -1,0 +1,92 @@
+/* Generelle stylinger */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #000080;
+    color: #DAA520;
+    text-align: center;
+    padding: 20px;
+}
+
+header a {
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Kurv container */
+#cart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Kurv liste */
+#cart {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Total pris */
+#total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Knapper */
+button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+
+
+/* Fjern knap */
+button[onclick^="removeFromCart"] {
+    background-color: #ddd;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+button[onclick^="removeFromCart"]:hover {
+    background-color: #bbb;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 600px) {
+    #cart-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

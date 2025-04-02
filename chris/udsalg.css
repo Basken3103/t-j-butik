@@ -9,14 +9,14 @@ body {
 
 /* Header */
 header {
-    background-color: #6495ED;
-    color: white;
+    background-color: #000080;
+    color: #DAA520;
     text-align: center;
     padding: 20px;
 }
 
 header a {
-    color: white;
+    color: #DAA520;
     text-decoration: none;
     font-weight: bold;
 }

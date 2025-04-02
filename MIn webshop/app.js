@@ -6,8 +6,8 @@ menu.onclick = () => {
     navlist.classList.toggle('open')
 }
 
-document.getElementById("close").onclick = function(){
-        navlist.classList.toggle('open')
+document.getElementById("close").onclick = function () {
+    navlist.classList.toggle('open')
 
 }
 
@@ -129,28 +129,62 @@ let products = [
         "images/7.jpg",
         true,
         true
-    ] 
+    ]
 ]
+
+//function updateCart() {
+//  const cartList = document.getElementById("cart");
+//  const totalPriceElement = document.getElementById("total-price");
+//  cartList.innerHTML = "";
+//  let totalPrice = 0;
+
+//  cart.forEach(item => {
+//      const li = document.createElement("li");
+//      li.textContent = `${item.name} - ${item.price} DKK`;
+//      cartList.appendChild(li);
+//      totalPrice += item.price;
+//  });
+
+//  totalPriceElement.textContent = totalPrice;
+//}
+
+//function addToCart(productId) {
+//    const product = products.find(p => p.id === productId);
+//    cart.push(product);
+//    renderCart();
+//}
+
+//function addToCart(product) {
+//    cart.push(product);
+//    updateCart();
+//}
+
+//function removeFromCart(index) {
+//    cart.splice(index, 1);
+//    renderCart();
+//}
+
+//renderProducts();
 
 
 
 
 // test
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cart = [];
     const cartElement = document.getElementById("cart"); // Sørg for, at der er et HTML-element med id="cart"
-    
+
     document.querySelectorAll(".add-to-cart").forEach(button => {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             const productElement = this.closest(".row");
             const productName = productElement.querySelector("h3").innerText;
             const productPrice = productElement.querySelector(".price").innerText;
-            
+
             cart.push({ name: productName, price: productPrice });
             updateCart();
         });
     });
-    
+
     function updateCart() {
         cartElement.innerHTML = "";
         cart.forEach(item => {
@@ -160,3 +194,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+

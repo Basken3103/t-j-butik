@@ -11,41 +11,13 @@ const products = [
 
 // Anvend produkt formular fra Niels's eksempel på Teams. Den skal bruges til funktionaliteten til min kurv.
 
-const cart = [];
+//const cart = [];
 
-function renderProducts() {
-    const productContainer = document.getElementById("products");
-    productContainer.innerHTML = "";
-    products.forEach(product => {
-        const productEl = document.createElement("div");
-        productEl.className = "product";
-        productEl.innerHTML = `
-            <span>${product.name} - ${product.price} kr</span>
-            <button class="button" onclick="addToCart(${product.id})">Tilføj til kurv</button>
-        `;
-        productContainer.appendChild(productEl);
-    });
-}
 
-function renderCart() {
-    const cartContainer = document.getElementById("cart");
-    cartContainer.innerHTML = "";
-    cart.forEach((item, index) => {
-        const cartItem = document.createElement("li");
-        cartItem.innerHTML = `${item.name} - ${item.price} kr <button onclick="removeFromCart(${index})">❌</button>`;
-        cartContainer.appendChild(cartItem);
-    });
-}
 
-function addToCart(productId) {
-    const product = products.find(p => p.id === productId);
-    cart.push(product);
-    renderCart();
-}
 
-function removeFromCart(index) {
-    cart.splice(index, 1);
-    renderCart();
-}
 
-renderProducts();
+
+
+
+
