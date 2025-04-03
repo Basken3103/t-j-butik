@@ -32,7 +32,9 @@ header {
 }
 
 /* Styling for tekstfelter */
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -43,7 +45,9 @@ input[type="text"], input[type="email"], textarea {
 }
 
 /* Fokus effekt på inputfelter */
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
     border-color: #007bff;
     outline: none;
 }
@@ -51,7 +55,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 /* Styling for tekstområdet (textarea) */
 textarea {
     height: 150px;
-    resize: vertical;
+    width: 500px;
 }
 
 /* Styling af submit knap */
